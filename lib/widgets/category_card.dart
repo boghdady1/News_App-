@@ -30,5 +30,5 @@ class CategoryCard extends StatelessWidget {
     );
   }
 
-  CategoryCard({required this.categoryModel});
+  const CategoryCard({super.key, required this.categoryModel});
 }
