@@ -3,7 +3,7 @@ import 'package:news_app2/models/category_models.dart';
 import 'package:news_app2/widgets/category_card.dart';
 
 class CategoriesListView extends StatelessWidget {
-  CategoriesListView({
+  const CategoriesListView({
     super.key,
   });
 
