@@ -10,17 +10,8 @@ class NewsPostListView extends StatelessWidget {
         delegate: SliverChildBuilderDelegate(
       childCount: 10,
       (context, index) {
-        return NewsPosts();
+        return const NewsPosts();
       },
     ));
   }
-
-//   ListView.builder(
-//   shrinkWrap: true,
-//   physics: const NeverScrollableScrollPhysics(),
-//   itemCount: 10,
-//   itemBuilder: (context, index) {
-//     return const NewsPosts();
-//   },
-// );
 }
