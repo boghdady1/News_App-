@@ -5,7 +5,7 @@ import 'package:news_app2/models/articles_model.dart';
 class NewsServices {
   final Dio dio = Dio();
 
-  void getGeneralNews() async {
+  Future<List<ArticleModel>> getGeneralNews() async {
     final Response response = await dio.get(
         "https://newsapi.org/v2/everything?q=%D9%85%D8%B5%D8%B1&apiKey=a7e0c5e48848418895f871835ea8f3ef&language=ar");
     Map<String, dynamic> jsonData = response.data;
@@ -18,7 +18,7 @@ class NewsServices {
           description: article["description"]);
       articlesList.add(articleModel);
     }
-    print(articlesList);
+    return articlesList;
   }
 
   void getHealthNews() async {
