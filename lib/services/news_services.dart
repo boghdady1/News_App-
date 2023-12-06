@@ -20,14 +20,13 @@ class NewsServices {
     }
     return articlesList;
   }
-
-  void getHealthNews() async {
-    final Response response = await dio.get(
-        "https://newsapi.org/v2/everything?q=%D8%A7%D9%84%D8%B5%D8%AD%D8%A9&apiKey=a7e0c5e48848418895f871835ea8f3ef&language=ar");
-  }
-
-  void getSportsNews() async {
-    final Response response = await dio.get(
-        "https://newsapi.org/v2/everything?q=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9&apiKey=a7e0c5e48848418895f871835ea8f3ef&language=ar");
-  }
 }
+// void getHealthNews() async {
+//   final Response response = await dio.get(
+//       "https://newsapi.org/v2/everything?q=%D8%A7%D9%84%D8%B5%D8%AD%D8%A9&apiKey=a7e0c5e48848418895f871835ea8f3ef&language=ar");
+// }
+//
+// void getSportsNews() async {
+//   final Response response = await dio.get(
+//       "https://newsapi.org/v2/everything?q=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9&apiKey=a7e0c5e48848418895f871835ea8f3ef&language=ar");
+// }
