@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app2/widgets/categories_list_view.dart';
-import 'package:news_app2/widgets/news_post_sliver_view.dart';
+import 'package:news_app2/widgets/news_list_view_builder.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(
               child: SizedBox(height: 10),
             ),
-            NewsPostListView()
+            NewsPostListViewBuilder()
           ],
         ));
   }
