@@ -5,6 +5,8 @@ import 'package:news_app2/widgets/news_list_view_builder.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+  static const String routeName = "home";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +30,7 @@ class HomeScreen extends StatelessWidget {
             SliverToBoxAdapter(
               child: SizedBox(height: 10),
             ),
-            NewsPostListViewBuilder()
+            NewsPostListViewBuilder(category: "عام")
           ],
         ));
   }
