@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:news_app2/models/articles_model.dart';
 
-//todo: handle apis and methods
 class NewsServices {
   final Dio dio = Dio();
 
